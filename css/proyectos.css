@@ -17,6 +17,10 @@ html {
 
 /* ----------------HEADER---------------- */
 
+header {
+    grid-area: header;
+}
+
 .navBar {
     width: 100%;
     height: 80px;
@@ -27,36 +31,47 @@ html {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.navBar ul {
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
+.CajaNav {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.navBar li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.navBar a {
+.navBar .CajaNav a {
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
-    height: 80px;
-    line-height: 80px;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
 }
 
-.navBar a:hover {
+.navBar .CajaNav a:hover {
     color: #27724E;
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
 }
 
 .logoNav {
-    display: inline-block;
     vertical-align: middle;
+    width: 50px;
+    transition: 1s;
+}
+
+.logoNav:hover {
     width: 70px;
-    margin-right: 20px;
+    transition: 1s;
 }
 
 /* ---------------/HEADER---------------- */
@@ -80,11 +95,13 @@ main h2 {
     text-transform: uppercase;
     font-size: 40px;
     letter-spacing: 10px;
+    transition: 1s;
 }
 
 main h2:hover {
     color: #27724E;
     letter-spacing: 20px;
+    transition: 1s;
 }
 
 .videoclips {
@@ -126,6 +143,12 @@ main h2:hover {
     width: 500px;
     margin: 40px 40px 40px 40px;
     border: 2px solid #000;
+    transition: 1s;
+}
+
+.frames1 img:hover {
+    width: 700px;
+    transition: 1s;
 }
 
 /* ----------------/MAIN----------------- */
@@ -133,6 +156,7 @@ main h2:hover {
 /* ----------------FOOTER---------------- */
 
 footer {
+    grid-area: footer;
     width: 100%;
     height: 80px;
     background-color: #272159;
@@ -163,17 +187,29 @@ footer {
     color: #27724E;
 }
 
-.logoFooter {
+footer .logoFooter a{
     display: flex;
-    align-items: flex-end;
-    justify-items: flex-end;
+    align-items: center;
+    justify-items: center;
 }
 
-footer img {
-    width: 60px;
+footer .logoFooter a img {
+    width: 50px;
+    transition: 1s;
 }
 
-footer p {
+footer .logoFooter a img:hover {
+    width: 70px;
+    transition: 1s;
+}
+
+.infoFooterGrande {
+    font-size: 15px;
+    color: #fff;
+}
+
+.infoFooterChico {
+    display: none;
     font-size: 15px;
     color: #fff;
 }

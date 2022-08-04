@@ -42,36 +42,47 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.navBar ul {
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
+.CajaNav {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.navBar li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.navBar a {
+.navBar .CajaNav a {
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
-    height: 80px;
-    line-height: 80px;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
 }
 
-.navBar a:hover {
+.navBar .CajaNav a:hover {
     color: #27724E;
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
 }
 
 .logoNav {
-    display: inline-block;
     vertical-align: middle;
+    width: 50px;
+    transition: 1s;
+}
+
+.logoNav:hover {
     width: 70px;
-    margin-right: 20px;
+    transition: 1s;
 }
 
 /* ---------------/HEADER---------------- */
@@ -95,11 +106,13 @@ h2 {
     font-size: 80px;
     text-transform: uppercase;
     letter-spacing: 50px;
+    transition: 1s;
 }
 
 h2:hover {
     color: #27724E;
     letter-spacing: 55px;
+    transition: 1s;
 }
 
 .video {
@@ -152,14 +165,20 @@ footer {
     color: #27724E;
 }
 
-.logoFooter {
+footer .logoFooter a{
     display: flex;
-    align-items: flex-end;
-    justify-items: flex-end;
+    align-items: center;
+    justify-items: center;
 }
 
-footer img {
-    width: 60px;
+footer .logoFooter a img {
+    width: 50px;
+    transition: 1s;
+}
+
+footer .logoFooter a img:hover {
+    width: 70px;
+    transition: 1s;
 }
 
 .infoFooterGrande {
