@@ -1,0 +1,182 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+/* 
+Paleta de colores
+color: #272159;
+color: #153323;
+color: #27724E;
+color: #460731;
+color: #143285;
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------HEADER---------------- */
+
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    text-align: center;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navBar ul {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.navBar li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navBar a:hover {
+    color: #27724E;
+}
+
+.logoNav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    margin-right: 20px;
+}
+
+/* ---------------/HEADER---------------- */
+/* -------------------------------------- */
+/* -----------------MAIN----------------- */
+
+main {
+    color: #fff;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../media/background.png);
+    background-blend-mode: hard-light;
+    background-size: contain;
+    width: 100%;
+    height: 900px;
+}
+
+main h2 {
+    width: 100%;
+    height: 150px;
+    padding: 150px 0px 60px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+main h2:hover {
+    color: #27724E;
+    letter-spacing: 20px;
+}
+
+main table {
+    margin: 40px 0px 40px 0px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main table:hover {
+    background-color: #2721595d;
+}
+
+/* ----------------/MAIN----------------- */
+/* -------------------------------------- */
+/* ----------------FOOTER---------------- */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #272159;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconosRedes {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.iconosRedes i {
+    font-size: 40px;
+    color: #fff;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.iconosRedes i:hover {
+    color: #27724E;
+}
+
+.logoFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
+}
+
+footer img {
+    width: 60px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* ---------------/FOOTER---------------- */
+
+.subir {
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 53px;
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.subir:hover {
+    color: #fff;
+}
+
+/* 
+Paleta de colores
+color: #272159;
+color: #153323;
+color: #27724E;
+color: #460731;
+color: #143285;
+*/
