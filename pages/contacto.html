@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,83 +17,123 @@
 </head>
 
 <body>
-    <!-- ----------------HEADER---------------- -->
+    <div class="gridContainer">
+        <!-- ----------------HEADER---------------- -->
 
-    <header>
-        <nav class="navBar">
-            <div class="CajaNav">
-                <a href="./about.html">Que es VANADIO</a>
-                <a href="./reel.html">Reel</a>
+        <header>
+            <nav class="navBarWide">
+                <div class="CajaNav">
+                    <a href="./about.html">Que es VANADIO</a>
+                    <a href="./reel.html">Reel</a>
+                </div>
+                <a href="../index.html">
+                    <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                </a>
+                <div class="CajaNav">
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </nav>
+            <nav class="navbar navBarSmall navbar-expand-sm  navbar-dark">
+                <div class="container-fluid">
+                    <a href="../index.html">
+                        <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">Que es VANADIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reel.html">Reel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ---------------/HEADER---------------- -->
+        <!-- -----------------MAIN----------------- -->
+        <main>
+            <div class="bloques">
+                <section class="bloqueInfo">
+                    <h2>Queres contactarte con vanadio?</h2>
+                    <h2>Llená el siguiente formulario!</h2>
+                </section>
+                <section class="bloqueForm">
+                    <form method="post" enctype="application/x-www-form-urlencoded" action="/action_page.php">
+                        <legend>Formulario de Consultas</legend>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Bruno" name="Nombre"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="1523456790"
+                                name="Telefono" required>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="contacto@gmail.com"
+                                name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="consulta">Consulta:</label>
+                            <textarea class="form-control" rows="5" id="consulta" name="text" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                    </form>
+                </section>
             </div>
-            <a href="../index.html">
-                <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
-            </a>
-            <div class="CajaNav">
-                <a href="./proyectos.html">Proyectos</a>
-                <a href="#">Contacto</a>
+        </main>
+
+        <!-- ----------------/MAIN----------------- -->
+        <!-- -------------------------------------- -->
+        <!-- ----------------FOOTER---------------- -->
+
+        <footer>
+            <div class="iconosRedes">
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/vanadioav/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
             </div>
-        </nav>
-    </header>
+            <div class="logoFooter">
+                <a href="../index.html">
+                    <img src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                </a>
+            </div>
+            <p class="infoFooterGrande">© VANADIO. Todos los derechos reservados. 2022.</p>
+            <p class="infoFooterChico">© VANADIO.</p>
+        </footer>
 
-    <!-- ---------------/HEADER---------------- -->
-    <!-- -----------------MAIN----------------- -->
-    <main>
-        <div class="bloques">
-            <section class="bloqueInfo">
-                <h2>Queres contactarte con vanadio?</h2>
-                <h2>Llená el siguiente formulario!</h2>
-            </section>
-            <section class="bloqueForm">
-                <form method="post" enctype="application/x-www-form-urlencoded">
-                    <legend>Formulario de Consultas</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Bruno" required>
-                    <br>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" placeholder="Arias" required>
-                    <br>
-                    <label for="mail">Email:</label>
-                    <input type="mail" placeholder="contacto@gmail.com" required>
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" placeholder="1523456790" required>
-                    <br>
-                    <label for="consulta">Consulta:</label>
-                    <br>
-                    <textarea name="consulta" cols="30" rows="10" placeholder="Inserte su consulta aquí"
-                        required></textarea>
-                    <br>
-                    <input type="submit" value="Enviar consulta"> <input type="reset" name="" id="" value="Borrar todo">
-                </form>
-            </section>
-        </div>
-    </main>
+        <!-- ---------------/FOOTER---------------- -->
 
-    <!-- ----------------/MAIN----------------- -->
-    <!-- -------------------------------------- -->
-    <!-- ----------------FOOTER---------------- -->
+        <a href="#" class="subir">
+            <i class="fa-solid fa-square-caret-up"></i>
+        </a>
+        
+    </div>
+    <!-- ---------------BOOTSTRAP---------------- -->
 
-    <footer>
-        <div class="iconosRedes">
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/vanadioav/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="logoFooter">
-            <a href="../index.html">
-                <img src="../media/logo_basic_white.png" alt="Vanadio Logo">
-            </a>
-        </div>
-        <p class="infoFooterGrande">© VANADIO. Todos los derechos reservados. 2022.</p>
-        <p class="infoFooterChico">© VANADIO.</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
-    <!-- ---------------/FOOTER---------------- -->
+    <!-- --------------/BOOTSTRAP---------------- -->
 
-    <a href="#" class="subir">
-        <i class="fa-solid fa-square-caret-up"></i>
-    </a>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 /* 
 Paleta de colores
@@ -15,13 +15,43 @@ html {
     scroll-behavior: smooth;
 }
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+        "header"
+        "bodyMain"
+        "footer"
+    ;
+}
+
 /* ----------------HEADER---------------- */
 
 header {
     grid-area: header;
 }
 
-.navBar {
+.navBarSmall {
+    display: none;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    text-align: center;
+    vertical-align: top;
+}
+
+.navBarSmall a:hover {
+    color: #27724E;
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+}
+
+.navBarWide {
     width: 100%;
     height: 80px;
     background-color: #000;
@@ -46,18 +76,18 @@ header {
     align-items: center;
 }
 
-.navBar .CajaNav a {
+.navBarWide .CajaNav a {
     text-decoration: none;
     color: #fff;
     height: 100%;
-    width: 20%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 1s;
 }
 
-.navBar .CajaNav a:hover {
+.navBarWide .CajaNav a:hover {
     color: #27724E;
     background-color: rgb(27, 27, 27);
     transition: 1s;
@@ -79,6 +109,7 @@ header {
 /* -----------------MAIN----------------- */
 
 main {
+    grid-area: bodyMain;
     color: #fff;
     background-color: #000;
     font-family: 'Courier New', Courier, monospace;
@@ -89,11 +120,12 @@ main {
 
 .bloques {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 50px 50px 50px 50px;
 }
 
 .bloqueInfo {
@@ -105,6 +137,7 @@ main {
     justify-content: center;
     align-items: center;
     transition: 1s;
+    margin: 10px 10px 10px 10px;
 }
 
 .bloqueInfo:hover {
@@ -121,7 +154,7 @@ main {
 
 .bloqueForm {
     width: 700px;
-    height: 500px;
+    height: 700px;
     background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     flex-flow: column wrap;
@@ -129,6 +162,8 @@ main {
     align-items: center;
     text-transform: uppercase;
     transition: 1s;
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
 }
 
 .bloqueForm:hover {
@@ -216,6 +251,128 @@ footer .logoFooter a img:hover {
 
 .subir:hover {
     color: #fff;
+}
+
+/* -------------MEDIA QUERIES------------ */
+
+@media only screen and (max-width: 1539px) {
+
+    .bloques {
+        width: 100%;
+        height: auto;
+    }
+
+    .bloqueInfo {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+
+    .navBarWide {
+        font-size: 15px;
+    }
+
+    .logoNav {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .iconosRedes i {
+        font-size: 30px;
+        color: #fff;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    footer img {
+        width: 50px;
+    }
+
+    .infoFooterGrande {
+        display: none;
+    }
+
+    .infoFooterChico {
+        display: contents;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .navBarWide a {
+        margin-left: 20px;
+        line-height: 0px;
+    }
+
+    .bloqueInfo {
+        padding: 20px;
+    }
+
+    .bloqueInfo h2 {
+        font-size: 20px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .iconosRedes i {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    .infoFooterChico {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .navBarWide {
+        display: none;
+    }
+
+    .navBarSmall {
+        display: block;
+    }
+
+    .bloques {
+        padding: 50px 10px 50px 10px;
+    }
+    
+    .bloqueInfo {
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .bloqueForm {
+        margin: 10px 0px 10px 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 410px) {
+
+    .iconosRedes i {
+        font-size: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    footer img {
+        width: 35px;
+    }
+
+    .infoFooterChico {
+        font-size: 10px;
+    }
 }
 
 /* 
