@@ -32,24 +32,7 @@ header {
     grid-area: header;
 }
 
-.navBarSmall {
-    display: none;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    text-align: center;
-    vertical-align: top;
-}
-
-.navBarSmall a:hover {
-    color: #27724E;
-    background-color: rgb(27, 27, 27);
-    transition: 1s;
-}
-
-.navbar {
-    --bs-navbar-padding-y: 1rem;
-}
+/* --------------NAVBAR WIDE------------- */
 
 .navBarWide {
     width: 100%;
@@ -76,7 +59,7 @@ header {
     align-items: center;
 }
 
-.navBarWide .CajaNav a {
+.CajaNav a {
     text-decoration: none;
     color: #fff;
     height: 100%;
@@ -87,7 +70,7 @@ header {
     transition: 1s;
 }
 
-.navBarWide .CajaNav a:hover {
+.CajaNav a:hover {
     color: #27724E;
     background-color: rgb(27, 27, 27);
     transition: 1s;
@@ -104,6 +87,29 @@ header {
     transition: 1s;
 }
 
+/* -------------/NAVBAR WIDE------------- */
+/* --------------NAVBAR SMALL------------ */
+
+.navbar {
+    display: none;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    text-align: center;
+    vertical-align: top;
+}
+
+.navbar a:hover {
+    color: #27724E;
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+}
+
+/* -------------/NAVBAR SMALL------------ */
 /* ---------------/HEADER---------------- */
 /* -------------------------------------- */
 /* -----------------MAIN----------------- */
@@ -124,18 +130,17 @@ main {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin: 40px 0px 40px 0px;  
 }
 
 .bloqueIndiv {
-    width: 400px;
+    width: 450px;
     height: 720px;
-    margin-top: 10px;
-    padding: 0px 40px 0px 40px;
+    margin: 10px 20px 10px 20px;
+    padding: 40px 40px 40px 40px;
     background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     transition: 1s;
 }
 
@@ -146,31 +151,23 @@ main {
 
 .bloqueIndiv h2 {
     font-size: 30px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin: 10px 0px 30px 0px;
 }
 
 .bloqueIndiv p {
-    margin: 7px;
-    padding: 0px;
+    margin-right: 7px;
 }
 
-/* ------------QUE ES VANADIO------------ */
-
-
-
-/* -----------/QUE ES VANADIO------------ */
-/* --------------QUE HACEMOS------------- */
-
-
-
-/* -------------/QUE HACEMOS------------- */
 /* -------------QUIENES SOMOS------------ */
 
 .tituloIntegrantes {
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
+    font-weight: 700;
+    margin: 5px 0px 5px 0px;
 }
 
 .principal {
@@ -178,19 +175,21 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 40px 0px 40px 0px; 
 }
 
 .fundador {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.05);
     width: 600px;
-    height: 600px;
-    padding: 0px;
-    margin: 10px 0px 0px 0px;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+    padding: 40px 20px 40px 20px;
     transition: 1s;
+
 }
 
 .fundador:hover {
@@ -202,28 +201,29 @@ main {
     width: 400px;
     border-radius: 1%;
     border: 3px solid #000;
-    padding: 0px;
-    margin: 0px;
 }
 
 .fundador h3 {
     font-size: 24px;
-    padding: 0px;
-    margin: 10px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
 }
 
 .fundador p {
+    font-size: 16px;
     padding: 0px;
     margin: 0px;
-}
+    text-align: center;
+}   
 
 .secundario {
     width: 100%;
-    padding: 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin: 20px 0px 40px 0px;
 }
 
 .colaborador {
@@ -233,9 +233,9 @@ main {
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.05);
     width: 500px;
-    height: 500px;
-    padding: 0px;
-    margin: 10px 10px 10px 10px;
+    height: auto;
+    margin: 10px 40px 10px 40px;
+    padding: 40px 20px 40px 20px;
     transition: 1s;
 }
 
@@ -248,26 +248,19 @@ main {
     width: 350px;
     border-radius: 1%;
     border: 3px solid #000;
-    padding: 0px;
 }
 
 .colaborador h4 {
     font-size: 20px;
-    padding: 0px;
-    margin: 10px;
-}
-
-.colaborador p {
-    padding: 0px;
-    margin: 0px;
-    font-size: 15px;
-}
-
-.card-body h4 {
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
     text-align: center;
 }
 
-.card-body p {
+.colaborador p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
 }
 
@@ -356,15 +349,17 @@ footer .logoFooter a img:hover {
 
 /* -------------MEDIA QUERIES------------ */
 
+@media only screen and (max-width: 979px) {
+
+    .bloqueIndiv {
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 970px) {
 
     .navBarWide {
         font-size: 15px;
-    }
-
-    .logoNav {
-        width: 50px;
-        margin-right: 20px;
     }
 
     .iconosRedes i {
@@ -386,73 +381,12 @@ footer .logoFooter a img:hover {
         display: contents;
         font-size: 20px;
     }
-
-}
-
-
-@media only screen and (max-width: 700px) {
-
-    .navBar a {
-        margin-left: 20px;
-        line-height: 0px;
-    }
-
 }
 
 @media only screen and (max-width: 620px) {
-    .bloqueIndiv {
-        width: 400px;
-        height: 520px;
-        padding: 0px 40px 0px 40px;
-    }
-
-    .bloqueIndiv h2 {
-        font-size: 25px;
-        margin-top: 25px;
-    }
-
-    .bloqueIndiv p {
-        font-size: 13px;
-    }
 
     .tituloIntegrantes {
         font-size: 25px;
-    }
-
-    .fundador {
-        width: 400px;
-        height: 400px;
-        padding: 0px;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .fundador img {
-        width: 300px;
-    }
-
-    .fundador h3 {
-        font-size: 20px;
-    }
-
-    .fundador p {
-        font-size: 13px;
-    }
-
-    .colaborador {
-        width: 300px;
-        height: 300px;
-    }
-
-    .colaborador img {
-        width: 200px;
-    }
-
-    .colaborador h4 {
-        font-size: 15px;
-    }
-
-    .colaborador p {
-        font-size: 10px;
     }
 
     .iconosRedes i {
@@ -481,32 +415,7 @@ footer .logoFooter a img:hover {
     }
 }
 
-@media only screen and (max-width: 480px) {
-
-    .bloqueIndiv {
-        width: 350px;
-        height: 500px;
-        padding: 0px 40px 0px 40px;
-    }
-
-    .bloqueIndiv h2 {
-        font-size: 20px;
-        margin-top: 25px;
-    }
-
-    .bloqueIndiv p {
-        font-size: 12px;
-
-    }
-
-    .tituloIntegrantes {
-        font-size: 20px;
-    }
-
-    .fundador {
-        width: 350px;
-        height: 450px;
-    }
+@media only screen and (max-width: 510px) {
 
     .fundador img {
         width: 300px;
@@ -517,18 +426,11 @@ footer .logoFooter a img:hover {
     }
 
     .fundador p {
-        width: 80%;
-        text-align: center;
         font-size: 13px;
     }
 
-    .colaborador {
-        width: 300px;
-        height: 300px;
-    }
-
     .colaborador img {
-        width: 200px;
+        width: 250px;
     }
 
     .colaborador h4 {
@@ -536,67 +438,50 @@ footer .logoFooter a img:hover {
     }
 
     .colaborador p {
-        width: 80%;
-        text-align: center;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 410px) {
 
     .bloqueIndiv {
-        width: 300px;
-        height: 580px;
+        padding: 20px 20px 20px 20px;
     }
 
     .bloqueIndiv h2 {
-        font-size: 16px;
+        font-size: 20px;
+    }
+
+    .bloqueIndiv p {
+        font-size: 12px;
     }
 
     .tituloIntegrantes {
         font-size: 18px;
     }
 
-    .fundador {
-        width: 300px;
-        height: 450px;
-    }
-
     .fundador img {
-        width: 280px;
+        width: 230px;
     }
 
     .fundador h3 {
-        width: 80%;
-        text-align: center;
         font-size: 17px;
     }
 
     .fundador p {
-        width: 80%;
-        text-align: center;
         font-size: 13px;
-    }
-
-    .colaborador {
-        width: 300px;
-        height: 300px;
-    }
+    } 
 
     .colaborador img {
         width: 200px;
     }
 
     .colaborador h4 {
-        width: 80%;
-        text-align: center;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .colaborador p {
-        width: 80%;
-        text-align: center;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .iconosRedes i {

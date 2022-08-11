@@ -33,24 +33,7 @@ header {
     grid-area: header;
 }
 
-.navBarSmall {
-    display: none;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    text-align: center;
-    vertical-align: top;
-}
-
-.navBarSmall a:hover {
-    color: #27724E;
-    background-color: rgb(27, 27, 27);
-    transition: 1s;
-}
-
-.navbar {
-    --bs-navbar-padding-y: 1rem;
-}
+/* --------------NAVBAR WIDE------------- */
 
 .navBarWide {
     width: 100%;
@@ -77,7 +60,7 @@ header {
     align-items: center;
 }
 
-.navBarWide .CajaNav a {
+.CajaNav a {
     text-decoration: none;
     color: #fff;
     height: 100%;
@@ -88,7 +71,7 @@ header {
     transition: 1s;
 }
 
-.navBarWide .CajaNav a:hover {
+.CajaNav a:hover {
     color: #27724E;
     background-color: rgb(27, 27, 27);
     transition: 1s;
@@ -105,6 +88,29 @@ header {
     transition: 1s;
 }
 
+/* -------------/NAVBAR WIDE------------- */
+/* --------------NAVBAR SMALL------------ */
+
+.navbar {
+    display: none;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    text-align: center;
+    vertical-align: top;
+}
+
+.navbar a:hover {
+    color: #27724E;
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+}
+
+/* -------------/NAVBAR SMALL------------ */
 /* ---------------/HEADER---------------- */
 /* -------------------------------------- */
 /* ----------------PORTADA--------------- */
@@ -310,11 +316,6 @@ footer .logoFooter a img:hover {
         font-size: 15px;
     }
 
-    .logoNav {
-        width: 50px;
-        margin-right: 20px;
-    }
-
     main .descripcionVanadio {
         text-align: center;
         font-size: 30px;
@@ -369,15 +370,6 @@ footer .logoFooter a img:hover {
     .ultimoVideoItem {
         width: 500px;
     }
-}
-
-@media only screen and (max-width: 700px) {
-
-    .navBar a {
-        margin-left: 20px;
-        line-height: 0px;
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
