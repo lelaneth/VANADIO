@@ -202,7 +202,7 @@ main .descripcionVanadio:hover {
 .carousel {
     background-color: rgba(92, 92, 92, 0.534);
     margin: 100px 0px 100px 0px;
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
