@@ -1,0 +1,234 @@
+@media only screen and (max-width: 979px) {
+
+    main {
+        .bloqueInfo {
+            .bloqueIndiv {
+                height: auto;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 970px) {
+
+    header {
+        .navBarWide {
+            font-size: 15px;
+        }
+    }
+
+    footer {
+        .iconosRedes {
+            a {
+                i {
+                    font-size: 30px;
+                    color: #fff;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .logoFooter {
+            a {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .infoFooter {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    main {
+        .tituloIntegrantes {
+            font-size: 25px;
+        }
+    }
+
+    footer {
+        .iconosRedes {
+            a {
+                i {
+                    font-size: 20px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .logoFooter {
+            a {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+        .infoFooter {
+            font-size: 15px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    header {
+        .navBarWide {
+            display: none;
+        }
+
+        .navbar {
+            display: block;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+    main {
+        .tituloIntegrantes {
+            font-size: 18px;
+        }
+        .principal {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 40px 0px 40px 0px;
+        
+            .fundador {
+                img {
+                    width: 300px;
+                }
+        
+                h3 {
+                    font-size: 18px;
+                }
+        
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        .secundario {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0px 40px 0px;
+            .colaborador {
+                img {
+                    width: 250px;
+                }
+                h4 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 410px) {
+
+    .bloquesInfo {
+        .bloqueIndiv {
+            padding: 20px 20px 20px 20px;
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    main {
+        .tituloIntegrantes {
+            font-size: 18px;
+        }
+        .principal {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 40px 0px 40px 0px;
+        
+            .fundador {
+                img {
+                    width: 230px;
+                }
+        
+                h3 {
+                    font-size: 17px;
+                }
+        
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        
+        .secundario {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0px 40px 0px;
+            .colaborador {
+                img {
+                    width: 200px;
+                }
+                h4 {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
+    footer {
+        .iconosRedes {
+            a {
+                i {
+                    font-size: 15px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .logoFooter {
+            a {
+                img {
+                    width: 35px;
+                }
+            }
+        }
+
+        .infoFooter {
+            font-size: 10px;
+        }
+    }
+
+}

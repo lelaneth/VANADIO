@@ -317,13 +317,7 @@ footer .logoFooter a img:hover {
     transition: 1s;
 }
 
-.infoFooterGrande {
-    font-size: 15px;
-    color: #fff;
-}
-
-.infoFooterChico {
-    display: none;
+.infoFooter {
     font-size: 15px;
     color: #fff;
 }

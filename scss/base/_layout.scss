@@ -1,0 +1,22 @@
+.gridContainerIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px calc(100vh - 80px) 1fr 80px;
+    grid-template-areas:
+        "header"
+        "videoPortada"
+        "bodyMain"
+        "footer"
+    ;
+}
+
+.gridContainerGeneral {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+        "header"
+        "bodyMain"
+        "footer"
+    ;
+}

@@ -1,0 +1,15 @@
+.subir {
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 53px;
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    &:hover {
+        color: #fff;
+    }
+}

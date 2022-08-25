@@ -1,5 +1,22 @@
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.gridContainerIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px calc(100vh - 80px) 1fr 80px;
+  grid-template-areas: "header" "videoPortada" "bodyMain" "footer"; }
+
+.gridContainerGeneral {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas: "header" "bodyMain" "footer"; }
 
 /* ----------------HEADER---------------- */
 header {
@@ -65,6 +82,24 @@ header {
       background-color: #1b1b1b;
       transition: 1s; }
 
+main {
+  grid-area: bodyMain;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url(../media/background.png);
+  background-blend-mode: hard-light;
+  background-size: contain; }
+
+/* ---------------SLIDESHOW-------------- */
+.carousel {
+  background-color: rgba(92, 92, 92, 0.534);
+  margin: 100px 0px 100px 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+
+/* --------------/SLIDESHOW-------------- */
 /* ----------------FOOTER---------------- */
 footer {
   grid-area: footer;
@@ -76,159 +111,52 @@ footer {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   font-size: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "redes logo texto"; }
   footer .iconosRedes {
+    grid-area: redes;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     align-items: center; }
-    footer .iconosRedes a i {
-      font-size: 40px;
-      color: #fff;
-      margin-right: 30px;
-      margin-left: 30px; }
-      footer .iconosRedes a i:hover {
-        color: #27724E; }
-  footer .logoFooter a {
+    footer .iconosRedes a {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; }
+      footer .iconosRedes a i {
+        font-size: 30px;
+        color: #fff;
+        margin-right: 30px;
+        margin-left: 30px; }
+        footer .iconosRedes a i:hover {
+          color: #27724E; }
+  footer .logoFooter {
+    grid-area: logo;
     display: flex;
     align-items: center;
-    justify-items: center; }
+    justify-content: center; }
     footer .logoFooter a img {
       width: 50px;
       transition: 1s; }
       footer .logoFooter a img:hover {
         width: 70px;
         transition: 1s; }
-  footer .infoFooterGrande {
-    font-size: 15px;
-    color: #fff; }
-  footer .infoFooterChico {
-    display: none;
-    font-size: 15px;
-    color: #fff; }
-
-/* ---------------/FOOTER---------------- */
-html {
-  scroll-behavior: smooth; }
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 80px 1fr 80px;
-  grid-template-areas: "header" "bodyMain" "footer"; }
-
-/* -----------------MAIN----------------- */
-main {
-  grid-area: bodyMain;
-  color: #fff;
-  background-color: #000;
-  font-family: 'Courier New', Courier, monospace;
-  background-image: url(../media/background.png);
-  background-blend-mode: hard-light;
-  background-size: contain; }
-  main .bloquesInfo {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin: 40px 0px 40px 0px; }
-    main .bloquesInfo .bloqueIndiv {
-      width: 450px;
-      height: 720px;
-      margin: 10px 20px 10px 20px;
-      padding: 40px 40px 40px 40px;
-      background-color: rgba(255, 255, 255, 0.05);
-      display: flex;
-      flex-flow: column wrap;
-      transition: 1s; }
-      main .bloquesInfo .bloqueIndiv:hover {
-        background-color: #2721595d;
-        transition: 1s; }
-      main .bloquesInfo .bloqueIndiv h2 {
-        font-size: 30px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin: 10px 0px 30px 0px; }
-      main .bloquesInfo .bloqueIndiv p {
-        margin-right: 7px; }
-  main .tituloIntegrantes {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 5px 0px 5px 0px; }
-  main .principal {
-    width: 100%;
+  footer .infoFooter {
+    grid-area: texto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 40px 0px 40px 0px; }
-    main .principal .fundador {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.05);
-      width: 600px;
-      height: auto;
-      margin: 0px 20px 0px 20px;
-      padding: 40px 20px 40px 20px;
-      transition: 1s; }
-      main .principal .fundador:hover {
-        background-color: #2721595d;
-        transition: 1s; }
-      main .principal .fundador img {
-        width: 400px;
-        border-radius: 1%;
-        border: 3px solid #000; }
-      main .principal .fundador h3 {
-        font-size: 24px;
-        font-weight: 600;
-        margin: 20px 0px 20px 0px;
-        text-align: center; }
-      main .principal .fundador p {
-        font-size: 16px;
-        padding: 0px;
-        margin: 0px;
-        text-align: center; }
-  main .secundario {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 0px 40px 0px; }
-    main .secundario .colaborador {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: rgba(255, 255, 255, 0.05);
-      width: 500px;
-      height: auto;
-      margin: 10px 40px 10px 40px;
-      padding: 40px 20px 40px 20px;
-      transition: 1s; }
-      main .secundario .colaborador:hover {
-        background-color: #2721595d;
-        transition: 1s; }
-      main .secundario .colaborador img {
-        width: 350px;
-        border-radius: 1%;
-        border: 3px solid #000; }
-      main .secundario .colaborador h4 {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 20px 0px 20px 0px;
-        text-align: center; }
-      main .secundario .colaborador p {
-        font-size: 16px;
-        padding: 0px;
-        margin: 0px;
-        text-align: center; }
+    align-items: center; }
+    footer .infoFooter span {
+      font-size: 15px;
+      color: #fff;
+      margin-top: 7px; }
 
+/* ---------------/FOOTER---------------- */
 .subir {
   height: 50px;
   width: 50px;
@@ -243,5 +171,237 @@ main {
   .subir:hover {
     color: #fff; }
 
-/* ----------------/MAIN----------------- */
-/* -------------------------------------- */
+/* -----------------INDEX----------------- */
+/* ----------------PORTADA---------------- */
+.portada {
+  grid-area: videoPortada;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+/* ---------------/PORTADA---------------- */
+/* ----------------/INDEX----------------- */
+/* --------------------------------------- */
+/* -----------------ABOUT----------------- */
+.bloquesInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0px 40px 0px; }
+  .bloquesInfo .bloqueIndiv {
+    width: 450px;
+    height: 720px;
+    margin: 10px 20px 10px 20px;
+    padding: 40px 40px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-flow: column wrap;
+    transition: 1s; }
+    .bloquesInfo .bloqueIndiv:hover {
+      background-color: #2721595d;
+      transition: 1s; }
+    .bloquesInfo .bloqueIndiv h2 {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 10px 0px 30px 0px; }
+    .bloquesInfo .bloqueIndiv p {
+      margin-right: 7px; }
+
+.tituloIntegrantes {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 5px 0px 5px 0px; }
+
+.principal {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 40px 0px 40px 0px; }
+  .principal .fundador {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 600px;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+    padding: 40px 20px 40px 20px;
+    transition: 1s; }
+    .principal .fundador:hover {
+      background-color: #2721595d;
+      transition: 1s; }
+    .principal .fundador img {
+      width: 400px;
+      border-radius: 1%;
+      border: 3px solid #000; }
+    .principal .fundador h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 20px 0px 20px 0px;
+      text-align: center; }
+    .principal .fundador p {
+      font-size: 16px;
+      padding: 0px;
+      margin: 0px;
+      text-align: center; }
+
+.secundario {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0px 40px 0px; }
+  .secundario .colaborador {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 500px;
+    height: auto;
+    margin: 10px 40px 10px 40px;
+    padding: 40px 20px 40px 20px;
+    transition: 1s; }
+    .secundario .colaborador:hover {
+      background-color: #2721595d;
+      transition: 1s; }
+    .secundario .colaborador img {
+      width: 350px;
+      border-radius: 1%;
+      border: 3px solid #000; }
+    .secundario .colaborador h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 20px 0px 20px 0px;
+      text-align: center; }
+    .secundario .colaborador p {
+      font-size: 16px;
+      padding: 0px;
+      margin: 0px;
+      text-align: center; }
+
+/* ----------------/ABOUT----------------- */
+/* --------------------------------------- */
+/* -----------------REEL------------------ */
+/* ----------------/REEL------------------ */
+/* --------------------------------------- */
+/* ---------------PROYECTOS--------------- */
+/* --------------/PROYECTOS--------------- */
+/* --------------------------------------- */
+/* ---------------CONTACTO---------------- */
+/* --------------/CONTACTO---------------- */
+/* --------------------------------------- */
+@media only screen and (max-width: 979px) {
+  main .bloqueInfo .bloqueIndiv {
+    height: auto; } }
+
+@media only screen and (max-width: 970px) {
+  header .navBarWide {
+    font-size: 15px; }
+  footer .iconosRedes a i {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: 15px; }
+  footer .logoFooter a img {
+    width: 50px; }
+  footer .infoFooter {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 620px) {
+  main .tituloIntegrantes {
+    font-size: 25px; }
+  footer .iconosRedes a i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px; }
+  footer .logoFooter a img {
+    width: 40px; }
+  footer .infoFooter {
+    font-size: 15px; } }
+
+@media only screen and (max-width: 575px) {
+  header .navBarWide {
+    display: none; }
+  header .navbar {
+    display: block; } }
+
+@media only screen and (max-width: 510px) {
+  main .tituloIntegrantes {
+    font-size: 18px; }
+  main .principal {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px 0px 40px 0px; }
+    main .principal .fundador img {
+      width: 300px; }
+    main .principal .fundador h3 {
+      font-size: 18px; }
+    main .principal .fundador p {
+      font-size: 14px; }
+  main .secundario {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px 40px 0px; }
+    main .secundario .colaborador img {
+      width: 250px; }
+    main .secundario .colaborador h4 {
+      font-size: 15px; }
+    main .secundario .colaborador p {
+      font-size: 12px; } }
+
+@media only screen and (max-width: 410px) {
+  .bloquesInfo .bloqueIndiv {
+    padding: 20px 20px 20px 20px; }
+    .bloquesInfo .bloqueIndiv h2 {
+      font-size: 20px; }
+    .bloquesInfo .bloqueIndiv p {
+      font-size: 12px; }
+  main .tituloIntegrantes {
+    font-size: 18px; }
+  main .principal {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px 0px 40px 0px; }
+    main .principal .fundador img {
+      width: 230px; }
+    main .principal .fundador h3 {
+      font-size: 17px; }
+    main .principal .fundador p {
+      font-size: 13px; }
+  main .secundario {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px 40px 0px; }
+    main .secundario .colaborador img {
+      width: 200px; }
+    main .secundario .colaborador h4 {
+      font-size: 14px; }
+    main .secundario .colaborador p {
+      font-size: 12px; }
+  footer .iconosRedes a i {
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 5px; }
+  footer .logoFooter a img {
+    width: 35px; }
+  footer .infoFooter {
+    font-size: 10px; } }
