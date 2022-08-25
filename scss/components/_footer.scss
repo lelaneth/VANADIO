@@ -1,5 +1,7 @@
 /* ----------------FOOTER---------------- */
 
+@import "./base/maps";
+
 footer {
     grid-area: footer;
     width: 100%;
@@ -22,7 +24,7 @@ footer {
         grid-area: redes;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         a {
             display: flex;
@@ -33,14 +35,19 @@ footer {
             i {
                 font-size: 30px;
                 color: #fff;
-                margin-right: 30px;
-                margin-left: 30px;
-                &:hover {
-                    color: #27724E;
-                }
+                margin-right: 0px;
+                margin-left: 0px;
             }
         }
     }
+
+@each $nombre, $color in $redes {
+    .fa-#{$nombre} {
+        &:hover {
+            color: $color;
+        }
+    }
+}
 
     .logoFooter {
         grid-area: logo;

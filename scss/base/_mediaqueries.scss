@@ -1,7 +1,7 @@
 @media only screen and (max-width: 979px) {
 
     main {
-        .bloqueInfo {
+        .bloquesInfo {
             .bloqueIndiv {
                 height: auto;
             }
@@ -22,10 +22,8 @@
         .iconosRedes {
             a {
                 i {
-                    font-size: 30px;
+                    font-size: 25px;
                     color: #fff;
-                    margin-right: 15px;
-                    margin-left: 15px;
                 }
             }
         }
@@ -57,9 +55,8 @@
         .iconosRedes {
             a {
                 i {
-                    font-size: 20px;
-                    margin-right: 10px;
-                    margin-left: 10px;
+                    margin-right: 15px;
+                    margin-left: 15px;
                 }
             }
         }
@@ -144,6 +141,20 @@
 
 }
 
+@media only screen and (max-width: 485px) {
+
+    footer {
+        .iconosRedes {
+            a {
+                i {
+                    font-size: 20px;
+                    margin-right: 13px;
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 410px) {
 
@@ -212,8 +223,8 @@
             a {
                 i {
                     font-size: 15px;
-                    margin-right: 5px;
-                    margin-left: 5px;
+                    margin-right: 10px;
+                    margin-left: 10px;
                 }
             }
         }

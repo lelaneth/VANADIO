@@ -1,5 +1,6 @@
 @import "./base/generales";
 @import "./base/layout";
+@import "./base/maps";
 @import "./components/header";
 @import "./components/main";
 @import "./components/slideshow";
@@ -10,6 +11,7 @@
 /* -----------------INDEX----------------- */
 
 /* ----------------PORTADA---------------- */
+
 .portada {
     grid-area: videoPortada;
     height: 100%;
@@ -23,26 +25,33 @@
 /* --------------------------------------- */
 /* -----------------ABOUT----------------- */
 
+@mixin sizeMargin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
 .bloquesInfo {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin: 40px 0px 40px 0px;
+    @include sizeMargin(40px, 0px, 40px, 0px);
 
     .bloqueIndiv {
         width: 450px;
         height: 720px;
-        margin: 10px 20px 10px 20px;
+        @include sizeMargin(10px, 20px, 10px, 20px);
         padding: 40px 40px 40px 40px;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: map-get($estilos, colorFondo);
         display: flex;
         flex-flow: column wrap;
         transition: 1s;
 
         &:hover {
-            background-color: #2721595d;
+            background-color: map-get($estilos, colorHover);
             transition: 1s;
         }
 
@@ -50,7 +59,7 @@
             font-size: 30px;
             font-weight: 600;
             text-transform: uppercase;
-            margin: 10px 0px 30px 0px;
+            @include sizeMargin(10px, 0px, 30px, 0px);
         }
 
         p {
@@ -64,7 +73,7 @@
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
-    margin: 5px 0px 5px 0px;
+    @include sizeMargin(5px, 0px, 5px, 0px);
 }
 
 .principal {
@@ -72,22 +81,23 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 40px 0px 40px 0px;
+    align-items: center;
+    @include sizeMargin(40px, 0px, 40px, 0px);
 
     .fundador {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: map-get($estilos, colorFondo);
         width: 600px;
         height: auto;
-        margin: 0px 20px 0px 20px;
+        @include sizeMargin(0px, 20px, 0px, 20px);
         padding: 40px 20px 40px 20px;
         transition: 1s;
 
         &:hover {
-            background-color: #2721595d;
+            background-color: map-get($estilos, colorHover);
             transition: 1s;
         }
 
@@ -100,7 +110,7 @@
         h3 {
             font-size: 24px;
             font-weight: 600;
-            margin: 20px 0px 20px 0px;
+            @include sizeMargin(20px, 0px, 20px, 0px);
             text-align: center;
         }
 
@@ -114,27 +124,16 @@
 }
 
 .secundario {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 0px 40px 0px;
+    @extend .principal;
+    @include sizeMargin(20px, 0px, 40px, 0px);
 
     .colaborador {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: rgba(255, 255, 255, 0.05);
+        @extend .fundador;
         width: 500px;
-        height: auto;
-        margin: 10px 40px 10px 40px;
-        padding: 40px 20px 40px 20px;
-        transition: 1s;
+        @include sizeMargin(10px, 40px, 10px, 40px);
 
         &:hover {
-            background-color: #2721595d;
+            background-color: map-get($estilos, colorHover);
             transition: 1s;
         }
 
@@ -147,7 +146,7 @@
         h4 {
             font-size: 20px;
             font-weight: 600;
-            margin: 20px 0px 20px 0px;
+            @include sizeMargin(20px, 0px, 20px, 0px);
             text-align: center;
         }
 

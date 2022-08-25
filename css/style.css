@@ -119,7 +119,7 @@ footer {
     grid-area: redes;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; }
     footer .iconosRedes a {
       display: flex;
@@ -130,10 +130,18 @@ footer {
       footer .iconosRedes a i {
         font-size: 30px;
         color: #fff;
-        margin-right: 30px;
-        margin-left: 30px; }
-        footer .iconosRedes a i:hover {
-          color: #27724E; }
+        margin-right: 0px;
+        margin-left: 0px; }
+  footer .fa-facebook:hover {
+    color: #1b50fc; }
+  footer .fa-instagram:hover {
+    color: #e252f5; }
+  footer .fa-youtube:hover {
+    color: #ee2b2b; }
+  footer .fa-vimeo:hover {
+    color: #5ed1ff; }
+  footer .fa-flickr:hover {
+    color: #ff0077; }
   footer .logoFooter {
     grid-area: logo;
     display: flex;
@@ -189,11 +197,17 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin: 40px 0px 40px 0px; }
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px; }
   .bloquesInfo .bloqueIndiv {
     width: 450px;
     height: 720px;
-    margin: 10px 20px 10px 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     padding: 40px 40px 40px 40px;
     background-color: rgba(255, 255, 255, 0.05);
     display: flex;
@@ -206,7 +220,10 @@ footer {
       font-size: 30px;
       font-weight: 600;
       text-transform: uppercase;
-      margin: 10px 0px 30px 0px; }
+      margin-top: 10px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px; }
     .bloquesInfo .bloqueIndiv p {
       margin-right: 7px; }
 
@@ -215,15 +232,22 @@ footer {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
-  margin: 5px 0px 5px 0px; }
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px; }
 
-.principal {
+.principal, .secundario {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 40px 0px 40px 0px; }
-  .principal .fundador {
+  align-items: center;
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px; }
+  .principal .fundador, .secundario .fundador, .secundario .colaborador {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -231,45 +255,44 @@ footer {
     background-color: rgba(255, 255, 255, 0.05);
     width: 600px;
     height: auto;
-    margin: 0px 20px 0px 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
     padding: 40px 20px 40px 20px;
     transition: 1s; }
-    .principal .fundador:hover {
+    .principal .fundador:hover, .secundario .fundador:hover, .secundario .colaborador:hover {
       background-color: #2721595d;
       transition: 1s; }
-    .principal .fundador img {
+    .principal .fundador img, .secundario .fundador img, .secundario .colaborador img {
       width: 400px;
       border-radius: 1%;
       border: 3px solid #000; }
-    .principal .fundador h3 {
+    .principal .fundador h3, .secundario .fundador h3, .secundario .colaborador h3 {
       font-size: 24px;
       font-weight: 600;
-      margin: 20px 0px 20px 0px;
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
       text-align: center; }
-    .principal .fundador p {
+    .principal .fundador p, .secundario .fundador p, .secundario .colaborador p {
       font-size: 16px;
       padding: 0px;
       margin: 0px;
       text-align: center; }
 
 .secundario {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 20px 0px 40px 0px; }
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px; }
   .secundario .colaborador {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.05);
     width: 500px;
-    height: auto;
-    margin: 10px 40px 10px 40px;
-    padding: 40px 20px 40px 20px;
-    transition: 1s; }
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px; }
     .secundario .colaborador:hover {
       background-color: #2721595d;
       transition: 1s; }
@@ -280,7 +303,10 @@ footer {
     .secundario .colaborador h4 {
       font-size: 20px;
       font-weight: 600;
-      margin: 20px 0px 20px 0px;
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
       text-align: center; }
     .secundario .colaborador p {
       font-size: 16px;
@@ -300,17 +326,15 @@ footer {
 /* --------------/CONTACTO---------------- */
 /* --------------------------------------- */
 @media only screen and (max-width: 979px) {
-  main .bloqueInfo .bloqueIndiv {
+  main .bloquesInfo .bloqueIndiv {
     height: auto; } }
 
 @media only screen and (max-width: 970px) {
   header .navBarWide {
     font-size: 15px; }
   footer .iconosRedes a i {
-    font-size: 30px;
-    color: #fff;
-    margin-right: 15px;
-    margin-left: 15px; }
+    font-size: 25px;
+    color: #fff; }
   footer .logoFooter a img {
     width: 50px; }
   footer .infoFooter {
@@ -320,9 +344,8 @@ footer {
   main .tituloIntegrantes {
     font-size: 25px; }
   footer .iconosRedes a i {
-    font-size: 20px;
-    margin-right: 10px;
-    margin-left: 10px; }
+    margin-right: 15px;
+    margin-left: 15px; }
   footer .logoFooter a img {
     width: 40px; }
   footer .infoFooter {
@@ -337,17 +360,17 @@ footer {
 @media only screen and (max-width: 510px) {
   main .tituloIntegrantes {
     font-size: 18px; }
-  main .principal {
+  main .principal, main .secundario {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: 40px 0px 40px 0px; }
-    main .principal .fundador img {
+    main .principal .fundador img, main .secundario .fundador img, .secundario main .principal .colaborador img, main .secundario .colaborador img {
       width: 300px; }
-    main .principal .fundador h3 {
+    main .principal .fundador h3, main .secundario .fundador h3, .secundario main .principal .colaborador h3, main .secundario .colaborador h3 {
       font-size: 18px; }
-    main .principal .fundador p {
+    main .principal .fundador p, main .secundario .fundador p, .secundario main .principal .colaborador p, main .secundario .colaborador p {
       font-size: 14px; }
   main .secundario {
     width: 100%;
@@ -363,6 +386,12 @@ footer {
     main .secundario .colaborador p {
       font-size: 12px; } }
 
+@media only screen and (max-width: 485px) {
+  footer .iconosRedes a i {
+    font-size: 20px;
+    margin-right: 13px;
+    margin-left: 13px; } }
+
 @media only screen and (max-width: 410px) {
   .bloquesInfo .bloqueIndiv {
     padding: 20px 20px 20px 20px; }
@@ -372,17 +401,17 @@ footer {
       font-size: 12px; }
   main .tituloIntegrantes {
     font-size: 18px; }
-  main .principal {
+  main .principal, main .secundario {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: 40px 0px 40px 0px; }
-    main .principal .fundador img {
+    main .principal .fundador img, main .secundario .fundador img, .secundario main .principal .colaborador img, main .secundario .colaborador img {
       width: 230px; }
-    main .principal .fundador h3 {
+    main .principal .fundador h3, main .secundario .fundador h3, .secundario main .principal .colaborador h3, main .secundario .colaborador h3 {
       font-size: 17px; }
-    main .principal .fundador p {
+    main .principal .fundador p, main .secundario .fundador p, .secundario main .principal .colaborador p, main .secundario .colaborador p {
       font-size: 13px; }
   main .secundario {
     width: 100%;
@@ -399,8 +428,8 @@ footer {
       font-size: 12px; }
   footer .iconosRedes a i {
     font-size: 15px;
-    margin-right: 5px;
-    margin-left: 5px; }
+    margin-right: 10px;
+    margin-left: 10px; }
   footer .logoFooter a img {
     width: 35px; }
   footer .infoFooter {
