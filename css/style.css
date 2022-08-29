@@ -378,9 +378,9 @@ h1 {
       text-transform: uppercase; }
   .gridContainerGeneral main .videoclips .frames1 {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 1400px;
+    width: 90%;
     padding: 50px;
-    margin: 40px 40px 40px 40px;
+    margin: 40px 0px 40px 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -391,7 +391,7 @@ h1 {
       border: 2px solid #000;
       transition: 1s; }
       .gridContainerGeneral main .videoclips .frames1 img:hover {
-        width: 700px;
+        width: 600px;
         transition: 1s; }
 
 /* --------------/PROYECTOS--------------- */
@@ -587,6 +587,30 @@ h1 {
 @media only screen and (max-width: 410px) {
   .gridContainerGeneral main .videoReel iframe {
     height: 145px; } }
+
+@media only screen and (max-width: 710px) {
+  .gridContainerGeneral main .videoclips .frames1 img {
+    width: 400px; }
+    .gridContainerGeneral main .videoclips .frames1 img:hover {
+      width: 500px; } }
+
+@media only screen and (max-width: 610px) {
+  .gridContainerGeneral main .videoclips .frames1 img {
+    width: 300px; }
+    .gridContainerGeneral main .videoclips .frames1 img:hover {
+      width: 400px; } }
+
+@media only screen and (max-width: 510px) {
+  .gridContainerGeneral main .videoclips .frames1 img {
+    width: 200px; }
+    .gridContainerGeneral main .videoclips .frames1 img:hover {
+      width: 300px; } }
+
+@media only screen and (max-width: 410px) {
+  .gridContainerGeneral main .videoclips .frames1 img {
+    width: 200px; }
+    .gridContainerGeneral main .videoclips .frames1 img:hover {
+      width: 250px; } }
 
 /* -------------MEDIA QUERIES------------ */
 @media only screen and (max-width: 1539px) {

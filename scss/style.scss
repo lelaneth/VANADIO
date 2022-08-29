@@ -244,9 +244,9 @@ h1 {
 
             .frames1 {
                 background-color: rgba(255, 255, 255, 0.1);
-                width: 1400px;
+                width: 90%;
                 padding: 50px;
-                margin: 40px 40px 40px 40px;
+                margin: 40px 0px 40px 0px;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-evenly;
@@ -259,7 +259,7 @@ h1 {
                     transition: 1s;
 
                     &:hover {
-                        width: 700px;
+                        width: 600px;
                         transition: 1s;
                     }
                 }
