@@ -1,14 +1,8 @@
-@media only screen and (max-width: 979px) {
-
-    main {
-        .bloquesInfo {
-            .bloqueIndiv {
-                height: auto;
-            }
-        }
-    }
-
-}
+@import "./mediaqueriesIndex";
+@import "./mediaqueriesAbout";
+@import "./mediaqueriesReel";
+@import "./mediaqueriesProyectos";
+@import "./mediaqueriesContacto";
 
 @media only screen and (max-width: 970px) {
 
@@ -44,12 +38,6 @@
 }
 
 @media only screen and (max-width: 620px) {
-
-    main {
-        .tituloIntegrantes {
-            font-size: 25px;
-        }
-    }
 
     footer {
         .iconosRedes {
@@ -90,57 +78,6 @@
 
 }
 
-@media only screen and (max-width: 510px) {
-
-    main {
-        .tituloIntegrantes {
-            font-size: 18px;
-        }
-        .principal {
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            margin: 40px 0px 40px 0px;
-        
-            .fundador {
-                img {
-                    width: 300px;
-                }
-        
-                h3 {
-                    font-size: 18px;
-                }
-        
-                p {
-                    font-size: 14px;
-                }
-            }
-        }
-        
-        .secundario {
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 20px 0px 40px 0px;
-            .colaborador {
-                img {
-                    width: 250px;
-                }
-                h4 {
-                    font-size: 15px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-
-}
-
 @media only screen and (max-width: 485px) {
 
     footer {
@@ -157,66 +94,6 @@
 }
 
 @media only screen and (max-width: 410px) {
-
-    .bloquesInfo {
-        .bloqueIndiv {
-            padding: 20px 20px 20px 20px;
-            h2 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-
-    main {
-        .tituloIntegrantes {
-            font-size: 18px;
-        }
-        .principal {
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            margin: 40px 0px 40px 0px;
-        
-            .fundador {
-                img {
-                    width: 230px;
-                }
-        
-                h3 {
-                    font-size: 17px;
-                }
-        
-                p {
-                    font-size: 13px;
-                }
-            }
-        }
-        
-        .secundario {
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 20px 0px 40px 0px;
-            .colaborador {
-                img {
-                    width: 200px;
-                }
-                h4 {
-                    font-size: 14px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-
 
     footer {
         .iconosRedes {

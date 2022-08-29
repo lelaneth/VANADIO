@@ -5,79 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta name="description" content="VANADIO es una productora audiovisual con base en Buenos Aires, Argentina. Nos dedicamos a la creacion de contenido del tipo de videoclips y timelapse para clientes exigentes y que quieran poseer una impronta unica es sus trabajos y proyectos">
-    <meta name="keywords" content="audiovisual, vanadio, productora, argentina, imagen, imagenes, audio, video, camara, sonido, videos, videoclip, creador de contenido, grabacion, filmacion, timelapse, slow motion">
+    <meta name="description"
+        content="VANADIO es una productora audiovisual con base en Buenos Aires, Argentina. Nos dedicamos a la creacion de contenido del tipo de videoclips y timelapse para clientes exigentes y que quieran poseer una impronta unica es sus trabajos y proyectos">
+    <meta name="keywords"
+        content="audiovisual, vanadio, productora, argentina, imagen, imagenes, audio, video, camara, sonido, videos, videoclip, creador de contenido, grabacion, filmacion, timelapse, slow motion">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/proyectos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../media/logo_basic_white.png" type="image/x-icon">
     <title>VANADIO Audiovisuales - Proyectos realizados hasta la fecha | Nuestros trabajos</title>
 </head>
 
 <body>
-    <!-- ----------------HEADER---------------- -->
     <div class="gridContainerGeneral">
-    <header>
-        <nav class="navBar">
-            <div class="CajaNav">
-                <a href="./about.html">Que es VANADIO</a>
-                <a href="./reel.html">Reel</a>
+
+        <!-- ----------------HEADER---------------- -->
+
+        <header>
+
+            <!-- ----------------NAVBAR WIDE---------------- -->
+
+            <nav class="navBarWide">
+                <div class="CajaNav">
+                    <a href="./about.html">Que es VANADIO</a>
+                    <a href="./reel.html">Reel</a>
+                </div>
+                <a href="../index.html">
+                    <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                </a>
+                <div class="CajaNav">
+                    <a href="#">Proyectos</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </nav>
+
+            <!-- ---------------/NAVBAR WIDE---------------- -->
+            <!-- ---------------NAVBAR SMALL---------------- -->
+
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <a href="../index.html">
+                        <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">Que es VANADIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reel.html">Reel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- ---------------/NAVBAR SMALL--------------- -->
+
+        </header>
+
+        <!-- ---------------/HEADER---------------- -->
+        <!-- -----------------MAIN----------------- -->
+        <main>
+            <div class="videoclips">
+                <p><a href="https://www.youtube.com/watch?v=J_tpish2JNM">Videoclip Hora Azul - Agustín Ferez (2022)</a>
+                </p>
+                <section class="frames1">
+                    <img src="../media/vanadioav_Work1.jpg" alt="Foto 1">
+                    <img src="../media/vanadioav_Work2.jpg" alt="Foto 2">
+                    <img src="../media/vanadioav_Work3.jpg" alt="Foto 3">
+                    <img src="../media/vanadioav_Work4.jpg" alt="Foto 4">
+                </section>
             </div>
-            <a href="../index.html">
-                <img class="logoNav" src="../media/logo_basic_white.png" alt="Vanadio Logo">
-            </a>
-            <div class="CajaNav">
-                <a href="#">Proyectos</a>
-                <a href="./contacto.html">Contacto</a>
+        </main>
+
+        <!-- ----------------/MAIN----------------- -->
+        <!-- -------------------------------------- -->
+        <!-- ----------------FOOTER---------------- -->
+
+        <footer>
+            <div class="iconosRedes">
+                <a href="https://www.facebook.com/VanadioAV"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/vanadioav/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://vimeo.com/vanadioav"><i class="fa-brands fa-vimeo"></i></a>
+                <a href="https://www.flickr.com/photos/vanadioav"><i class="fa-brands fa-flickr"></i></a>
             </div>
-        </nav>
-    </header>
+            <div class="logoFooter">
+                <a href="../index.html">
+                    <img src="../media/logo_basic_white.png" alt="Vanadio Logo">
+                </a>
+            </div>
+            <div class="infoFooter"><span>© VANADIO 2022.</span></div>
+        </footer>
 
-    <!-- ---------------/HEADER---------------- -->
-    <!-- -----------------MAIN----------------- -->
-    <main>
-        <h2>Trabajos</h2>
+        <!-- ---------------/FOOTER---------------- -->
 
-        <div class="videoclips">
-            <p>Videoclip <a href="https://www.youtube.com/watch?v=J_tpish2JNM">Hora Azul - Agustín
-                    Ferez</a> (2022)</p>
-            <section class="frames1">
-                <img src="../media/vanadioav_Work1.jpg" alt="Foto 1">
-                <img src="../media/vanadioav_Work2.jpg" alt="Foto 2">
-                <img src="../media/vanadioav_Work3.jpg" alt="Foto 3">
-                <img src="../media/vanadioav_Work4.jpg" alt="Foto 4">
-            </section>
-        </div>
-    </main>
+        <a href="#" class="subir">
+            <i class="fa-solid fa-square-caret-up"></i>
+        </a>
+    </div>
 
-    <!-- ----------------/MAIN----------------- -->
-    <!-- -------------------------------------- -->
-    <!-- ----------------FOOTER---------------- -->
+    <!-- ---------------BOOTSTRAP---------------- -->
 
-    <footer>
-        <div class="iconosRedes">
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/vanadioav/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="logoFooter">
-            <a href="../index.html">
-                <img src="../media/logo_basic_white.png" alt="Vanadio Logo">
-            </a>
-        </div>
-        <p class="infoFooterGrande">© VANADIO. Todos los derechos reservados. 2022.</p>
-        <p class="infoFooterChico">© VANADIO.</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
-    <!-- ---------------/FOOTER---------------- -->
+    <!-- --------------/BOOTSTRAP---------------- -->
 
-    <a href="#" class="subir">
-        <i class="fa-solid fa-square-caret-up"></i>
-    </a>
-</div>
 </body>
 
 </html>

@@ -1,0 +1,123 @@
+/* -------------MEDIA QUERIES------------ */
+
+@media only screen and (max-width: 1284px) {
+
+    .gridContainerIndex {
+        grid-template-rows: 80px auto 1fr 80px;
+
+        main {
+            .ultimoVideo {
+                .ultimoVideoItem {
+                    width: 800px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 840px) {
+
+    .gridContainerIndex {
+        main {
+            h1 {
+                font-size: 50px;
+            }
+
+            .subtituloVanadio {
+                font-size: 17px;
+            }
+
+            .ultimoVideoTitulo {
+                font-size: 40px;
+            }
+
+            .ultimoVideo {
+                .ultimoVideoItem {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .gridContainerIndex {
+        main {
+            h1 {
+                font-size: 35px;
+            }
+
+            .subtituloVanadio {
+                font-size: 15px;
+            }
+
+            .ultimoVideoTitulo {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+    .gridContainerIndex {
+        main {
+            .ultimoVideo {
+                .ultimoVideoItem {
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .gridContainerIndex {
+        main {
+            h1 {
+                font-size: 30px;
+            }
+
+            .subtituloVanadio {
+                font-size: 13px;
+            }
+
+            .ultimoVideoTitulo {
+                font-size: 25px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .gridContainerIndex {
+        main {
+            h1 {
+                font-size: 25px;
+            }
+
+            .subtituloVanadio {
+                font-size: 11px;
+            }
+
+            .ultimoVideoTitulo {
+                font-size: 20px;
+            }
+
+            .ultimoVideo {
+                .ultimoVideoItem {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+}

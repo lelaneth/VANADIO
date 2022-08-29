@@ -1,0 +1,84 @@
+/* -------------MEDIA QUERIES------------ */
+
+@media only screen and (max-width: 1200px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                iframe {
+                    height: 645px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 970px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                iframe {
+                    height: 445px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                height: 500px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                height: 600px;
+                iframe {
+                    height: 345px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                iframe {
+                    height: 245px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .gridContainerGeneral {
+        main {
+            .videoReel {
+                iframe {
+                    height: 145px;
+                }
+            }
+        }
+    }
+
+}

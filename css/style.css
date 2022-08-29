@@ -180,18 +180,46 @@ footer {
     color: #fff; }
 
 /* -----------------INDEX----------------- */
-/* ----------------PORTADA---------------- */
 .portada {
   grid-area: videoPortada;
   height: 100%;
   width: 100%;
   object-fit: cover; }
 
-/* ---------------/PORTADA---------------- */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px; }
+  h1:hover {
+    background-color: #2721594b;
+    border-radius: 10px; }
+
+.subtituloVanadio {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+  padding: 0px; }
+
+.ultimoVideoTitulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  padding: 20px; }
+
+.ultimoVideo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  background-image: url(../media/background2.jpg); }
+
 /* ----------------/INDEX----------------- */
 /* --------------------------------------- */
 /* -----------------ABOUT----------------- */
-.bloquesInfo {
+.bloqueAbout {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -201,7 +229,7 @@ footer {
   margin-right: 0px;
   margin-bottom: 40px;
   margin-left: 0px; }
-  .bloquesInfo .bloqueIndiv {
+  .bloqueAbout .bloqueIndiv {
     width: 450px;
     height: 720px;
     margin-top: 10px;
@@ -213,10 +241,10 @@ footer {
     display: flex;
     flex-flow: column wrap;
     transition: 1s; }
-    .bloquesInfo .bloqueIndiv:hover {
+    .bloqueAbout .bloqueIndiv:hover {
       background-color: #2721595d;
       transition: 1s; }
-    .bloquesInfo .bloqueIndiv h2 {
+    .bloqueAbout .bloqueIndiv h2 {
       font-size: 30px;
       font-weight: 600;
       text-transform: uppercase;
@@ -224,7 +252,7 @@ footer {
       margin-right: 0px;
       margin-bottom: 30px;
       margin-left: 0px; }
-    .bloquesInfo .bloqueIndiv p {
+    .bloqueAbout .bloqueIndiv p {
       margin-right: 7px; }
 
 .tituloIntegrantes {
@@ -317,45 +345,157 @@ footer {
 /* ----------------/ABOUT----------------- */
 /* --------------------------------------- */
 /* -----------------REEL------------------ */
+.gridContainerGeneral main .videoReel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px; }
+  .gridContainerGeneral main .videoReel iframe {
+    width: 80%;
+    height: 945px; }
+
 /* ----------------/REEL------------------ */
 /* --------------------------------------- */
 /* ---------------PROYECTOS--------------- */
+.gridContainerGeneral main .videoclips {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+  .gridContainerGeneral main .videoclips p {
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.1); }
+    .gridContainerGeneral main .videoclips p a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase; }
+  .gridContainerGeneral main .videoclips .frames1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 1400px;
+    padding: 50px;
+    margin: 40px 40px 40px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .gridContainerGeneral main .videoclips .frames1 img {
+      width: 500px;
+      margin: 40px 40px 40px 40px;
+      border: 2px solid #000;
+      transition: 1s; }
+      .gridContainerGeneral main .videoclips .frames1 img:hover {
+        width: 700px;
+        transition: 1s; }
+
 /* --------------/PROYECTOS--------------- */
 /* --------------------------------------- */
 /* ---------------CONTACTO---------------- */
+.gridContainerGeneral main .bloqueContacto {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 50px 50px 50px; }
+  .gridContainerGeneral main .bloqueContacto .bloqueInfo {
+    width: 700px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    margin: 10px 10px 10px 10px; }
+    .gridContainerGeneral main .bloqueContacto .bloqueInfo:hover {
+      background-color: #2721595d;
+      transition: 1s; }
+    .gridContainerGeneral main .bloqueContacto .bloqueInfo h2 {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center; }
+  .gridContainerGeneral main .bloqueContacto .bloqueForm {
+    width: 700px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 1s;
+    margin: 10px 10px 10px 10px;
+    padding: 20px; }
+    .gridContainerGeneral main .bloqueContacto .bloqueForm:hover {
+      background-color: #2721595d;
+      transition: 1s; }
+
 /* --------------/CONTACTO---------------- */
 /* --------------------------------------- */
-@media only screen and (max-width: 979px) {
-  main .bloquesInfo .bloqueIndiv {
-    height: auto; } }
+/* -------------MEDIA QUERIES------------ */
+@media only screen and (max-width: 1284px) {
+  .gridContainerIndex {
+    grid-template-rows: 80px auto 1fr 80px; }
+    .gridContainerIndex main .ultimoVideo .ultimoVideoItem {
+      width: 800px; } }
 
-@media only screen and (max-width: 970px) {
-  header .navBarWide {
+@media only screen and (max-width: 840px) {
+  .gridContainerIndex main h1 {
+    font-size: 50px; }
+  .gridContainerIndex main .subtituloVanadio {
+    font-size: 17px; }
+  .gridContainerIndex main .ultimoVideoTitulo {
+    font-size: 40px; }
+  .gridContainerIndex main .ultimoVideo .ultimoVideoItem {
+    width: 500px; } }
+
+@media only screen and (max-width: 600px) {
+  .gridContainerIndex main h1 {
+    font-size: 35px; }
+  .gridContainerIndex main .subtituloVanadio {
     font-size: 15px; }
-  footer .iconosRedes a i {
-    font-size: 25px;
-    color: #fff; }
-  footer .logoFooter a img {
-    width: 50px; }
-  footer .infoFooter {
-    font-size: 20px; } }
+  .gridContainerIndex main .ultimoVideoTitulo {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 520px) {
+  .gridContainerIndex main .ultimoVideo .ultimoVideoItem {
+    width: 400px; } }
+
+@media only screen and (max-width: 480px) {
+  .gridContainerIndex main h1 {
+    font-size: 30px; }
+  .gridContainerIndex main .subtituloVanadio {
+    font-size: 13px; }
+  .gridContainerIndex main .ultimoVideoTitulo {
+    font-size: 25px; } }
+
+@media only screen and (max-width: 410px) {
+  .gridContainerIndex main h1 {
+    font-size: 25px; }
+  .gridContainerIndex main .subtituloVanadio {
+    font-size: 11px; }
+  .gridContainerIndex main .ultimoVideoTitulo {
+    font-size: 20px; }
+  .gridContainerIndex main .ultimoVideo .ultimoVideoItem {
+    width: 300px; } }
+
+/* -------------MEDIA QUERIES------------ */
+@media only screen and (max-width: 979px) {
+  .gridContainerGeneral main .bloqueAbout .bloqueIndiv {
+    height: auto; } }
 
 @media only screen and (max-width: 620px) {
   main .tituloIntegrantes {
-    font-size: 25px; }
-  footer .iconosRedes a i {
-    margin-right: 15px;
-    margin-left: 15px; }
-  footer .logoFooter a img {
-    width: 40px; }
-  footer .infoFooter {
-    font-size: 15px; } }
-
-@media only screen and (max-width: 575px) {
-  header .navBarWide {
-    display: none; }
-  header .navbar {
-    display: block; } }
+    font-size: 25px; } }
 
 @media only screen and (max-width: 510px) {
   main .tituloIntegrantes {
@@ -386,18 +526,12 @@ footer {
     main .secundario .colaborador p {
       font-size: 12px; } }
 
-@media only screen and (max-width: 485px) {
-  footer .iconosRedes a i {
-    font-size: 20px;
-    margin-right: 13px;
-    margin-left: 13px; } }
-
 @media only screen and (max-width: 410px) {
-  .bloquesInfo .bloqueIndiv {
+  .bloqueAbout .bloqueIndiv {
     padding: 20px 20px 20px 20px; }
-    .bloquesInfo .bloqueIndiv h2 {
+    .bloqueAbout .bloqueIndiv h2 {
       font-size: 20px; }
-    .bloquesInfo .bloqueIndiv p {
+    .bloqueAbout .bloqueIndiv p {
       font-size: 12px; }
   main .tituloIntegrantes {
     font-size: 18px; }
@@ -425,7 +559,92 @@ footer {
     main .secundario .colaborador h4 {
       font-size: 14px; }
     main .secundario .colaborador p {
-      font-size: 12px; }
+      font-size: 12px; } }
+
+/* -------------MEDIA QUERIES------------ */
+@media only screen and (max-width: 1200px) {
+  .gridContainerGeneral main .videoReel iframe {
+    height: 645px; } }
+
+@media only screen and (max-width: 970px) {
+  .gridContainerGeneral main .videoReel iframe {
+    height: 445px; } }
+
+@media only screen and (max-width: 700px) {
+  .gridContainerGeneral main .videoReel {
+    height: 500px; } }
+
+@media only screen and (max-width: 620px) {
+  .gridContainerGeneral main .videoReel {
+    height: 600px; }
+    .gridContainerGeneral main .videoReel iframe {
+      height: 345px; } }
+
+@media only screen and (max-width: 480px) {
+  .gridContainerGeneral main .videoReel iframe {
+    height: 245px; } }
+
+@media only screen and (max-width: 410px) {
+  .gridContainerGeneral main .videoReel iframe {
+    height: 145px; } }
+
+/* -------------MEDIA QUERIES------------ */
+@media only screen and (max-width: 1539px) {
+  .gridContainerGeneral main .bloqueContacto {
+    width: 100%;
+    height: auto; }
+    .gridContainerGeneral main .bloqueContacto .bloqueInfo {
+      height: 400px; } }
+
+@media only screen and (max-width: 700px) {
+  .gridContainerGeneral main .bloqueContacto .bloqueInfo {
+    padding: 20px; }
+    .gridContainerGeneral main .bloqueContacto .bloqueInfo h2 {
+      font-size: 20px; } }
+
+@media only screen and (max-width: 575px) {
+  .gridContainerGeneral main .bloqueContacto {
+    padding: 50px 10px 50px 10px; }
+    .gridContainerGeneral main .bloqueContacto .bloqueInfo {
+      margin: 10px 0px 10px 0px; }
+      .gridContainerGeneral main .bloqueContacto .bloqueInfo h2 {
+        font-size: 20px; }
+    .gridContainerGeneral main .bloqueContacto .bloqueForm {
+      margin: 10px 0px 10px 0px; } }
+
+@media only screen and (max-width: 970px) {
+  header .navBarWide {
+    font-size: 15px; }
+  footer .iconosRedes a i {
+    font-size: 25px;
+    color: #fff; }
+  footer .logoFooter a img {
+    width: 50px; }
+  footer .infoFooter {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 620px) {
+  footer .iconosRedes a i {
+    margin-right: 15px;
+    margin-left: 15px; }
+  footer .logoFooter a img {
+    width: 40px; }
+  footer .infoFooter {
+    font-size: 15px; } }
+
+@media only screen and (max-width: 575px) {
+  header .navBarWide {
+    display: none; }
+  header .navbar {
+    display: block; } }
+
+@media only screen and (max-width: 485px) {
+  footer .iconosRedes a i {
+    font-size: 20px;
+    margin-right: 13px;
+    margin-left: 13px; } }
+
+@media only screen and (max-width: 410px) {
   footer .iconosRedes a i {
     font-size: 15px;
     margin-right: 10px;

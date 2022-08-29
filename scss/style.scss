@@ -10,8 +10,6 @@
 
 /* -----------------INDEX----------------- */
 
-/* ----------------PORTADA---------------- */
-
 .portada {
     grid-area: videoPortada;
     height: 100%;
@@ -19,7 +17,42 @@
     object-fit: cover;
 }
 
-/* ---------------/PORTADA---------------- */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+
+    &:hover {
+        background-color: #2721594b;
+        border-radius: 10px;
+    }
+}
+
+.subtituloVanadio {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+
+
+.ultimoVideoTitulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.ultimoVideo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    background-image: url(../media/background2.jpg);
+}
 
 /* ----------------/INDEX----------------- */
 /* --------------------------------------- */
@@ -32,7 +65,7 @@
     margin-left: $left;
 }
 
-.bloquesInfo {
+.bloqueAbout {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -163,19 +196,138 @@
 /* --------------------------------------- */
 /* -----------------REEL------------------ */
 
+.gridContainerGeneral {
+    main {
+        .videoReel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 50px 0px 50px 0px;
 
+            iframe {
+                width: 80%;
+                height: 945px;
+            }
+        }
+    }
+}
 
 /* ----------------/REEL------------------ */
 /* --------------------------------------- */
 /* ---------------PROYECTOS--------------- */
 
+.gridContainerGeneral {
+    main {
+        .videoclips {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
 
+            p {
+                text-transform: uppercase;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 800;
+                background-color: rgba(255, 255, 255, 0.1);
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+
+            .frames1 {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 1400px;
+                padding: 50px;
+                margin: 40px 40px 40px 40px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img {
+                    width: 500px;
+                    margin: 40px 40px 40px 40px;
+                    border: 2px solid #000;
+                    transition: 1s;
+
+                    &:hover {
+                        width: 700px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* --------------/PROYECTOS--------------- */
 /* --------------------------------------- */
 /* ---------------CONTACTO---------------- */
 
+.gridContainerGeneral {
+    main {
+        .bloqueContacto {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 50px 50px 50px 50px;
 
+            .bloqueInfo {
+                width: 700px;
+                height: 500px;
+                background-color: rgba(255, 255, 255, 0.05);
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                transition: 1s;
+                margin: 10px 10px 10px 10px;
+
+                &:hover {
+                    background-color: #2721595d;
+                    transition: 1s;
+                }
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    font-weight: 800;
+                    text-align: center;
+                }
+            }
+
+            .bloqueForm {
+                width: 700px;
+                height: 700px;
+                background-color: rgba(255, 255, 255, 0.05);
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                transition: 1s;
+                margin: 10px 10px 10px 10px;
+                padding: 20px;
+
+                &:hover {
+                    background-color: #2721595d;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
 
 /* --------------/CONTACTO---------------- */
 /* --------------------------------------- */
