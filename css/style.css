@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -28,8 +29,8 @@ header {
     text-align: center;
     vertical-align: top;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -50,22 +51,23 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 1s; }
+        transition: 0.5s; }
         header .navBarWide .CajaNav a:hover {
-          color: #27724E;
+          color: #70A9A1;
           background-color: #1b1b1b;
-          transition: 1s; }
+          transition: 0.5s; }
     header .navBarWide a .logoNav {
       vertical-align: middle;
       width: 50px;
-      transition: 1s; }
+      transition: 0.5s; }
       header .navBarWide a .logoNav:hover {
         width: 70px;
-        transition: 1s; }
+        transition: 0.5s; }
   header .navbar {
     display: none;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
     background-color: #000;
     text-align: center;
     vertical-align: top;
@@ -73,29 +75,29 @@ header {
     header .navbar .container-fluid a .logoNav {
       vertical-align: middle;
       width: 50px;
-      transition: 1s; }
+      transition: 0.5s; }
       header .navbar .container-fluid a .logoNav:hover {
         width: 70px;
-        transition: 1s; }
+        transition: 0.5s; }
     header .navbar .container-fluid a:hover {
-      color: #27724E;
+      color: #70A9A1;
       background-color: #1b1b1b;
-      transition: 1s; }
+      transition: 0.5s; }
 
 main {
   grid-area: bodyMain;
   color: #fff;
   background-color: #000;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Noto Sans", sans-serif;
   background-image: url(../media/background.png);
   background-blend-mode: hard-light;
   background-size: contain; }
 
 /* ---------------SLIDESHOW-------------- */
 .carousel {
-  background-color: rgba(92, 92, 92, 0.534);
-  margin: 100px 0px 100px 0px;
-  padding: 20px;
+  background-color: #70A9A1;
+  margin: 100px 100px 100px 100px;
+  padding: 10px;
   display: flex;
   justify-content: center; }
 
@@ -105,11 +107,11 @@ footer {
   grid-area: footer;
   width: 100%;
   height: 80px;
-  background-color: #272159;
+  background-color: #005557;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -149,10 +151,10 @@ footer {
     justify-content: center; }
     footer .logoFooter a img {
       width: 50px;
-      transition: 1s; }
+      transition: 0.5s; }
       footer .logoFooter a img:hover {
         width: 70px;
-        transition: 1s; }
+        transition: 0.5s; }
   footer .infoFooter {
     grid-area: texto;
     display: flex;
@@ -189,7 +191,7 @@ footer {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Noto Sans", sans-serif;
   font-size: 80px;
   margin: 0px 0px 0px 0px;
   padding: 0px; }
@@ -240,10 +242,10 @@ h1 {
     background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     flex-flow: column wrap;
-    transition: 1s; }
+    transition: 0.5s; }
     .bloqueAbout .bloqueIndiv:hover {
-      background-color: #2721595d;
-      transition: 1s; }
+      background-color: #005557;
+      transition: 0.5s; }
     .bloqueAbout .bloqueIndiv h2 {
       font-size: 30px;
       font-weight: 600;
@@ -288,10 +290,10 @@ h1 {
     margin-bottom: 0px;
     margin-left: 20px;
     padding: 40px 20px 40px 20px;
-    transition: 1s; }
+    transition: 0.5s; }
     .principal .fundador:hover, .secundario .fundador:hover, .secundario .colaborador:hover {
-      background-color: #2721595d;
-      transition: 1s; }
+      background-color: #005557;
+      transition: 0.5s; }
     .principal .fundador img, .secundario .fundador img, .secundario .colaborador img {
       width: 400px;
       border-radius: 1%;
@@ -322,8 +324,8 @@ h1 {
     margin-bottom: 10px;
     margin-left: 40px; }
     .secundario .colaborador:hover {
-      background-color: #2721595d;
-      transition: 1s; }
+      background-color: #005557;
+      transition: 0.5s; }
     .secundario .colaborador img {
       width: 350px;
       border-radius: 1%;
@@ -389,10 +391,10 @@ h1 {
       width: 500px;
       margin: 40px 40px 40px 40px;
       border: 2px solid #000;
-      transition: 1s; }
+      transition: 0.5s; }
       .gridContainerGeneral main .videoclips .frames1 img:hover {
         width: 600px;
-        transition: 1s; }
+        transition: 0.5s; }
 
 /* --------------/PROYECTOS--------------- */
 /* --------------------------------------- */
@@ -413,11 +415,11 @@ h1 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    transition: 1s;
+    transition: 0.5s;
     margin: 10px 10px 10px 10px; }
     .gridContainerGeneral main .bloqueContacto .bloqueInfo:hover {
       background-color: #2721595d;
-      transition: 1s; }
+      transition: 0.5s; }
     .gridContainerGeneral main .bloqueContacto .bloqueInfo h2 {
       text-transform: uppercase;
       font-size: 30px;
@@ -432,12 +434,12 @@ h1 {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    transition: 1s;
+    transition: 0.5s;
     margin: 10px 10px 10px 10px;
     padding: 20px; }
     .gridContainerGeneral main .bloqueContacto .bloqueForm:hover {
       background-color: #2721595d;
-      transition: 1s; }
+      transition: 0.5s; }
 
 /* --------------/CONTACTO---------------- */
 /* --------------------------------------- */

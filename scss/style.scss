@@ -1,4 +1,5 @@
 @import "./base/generales";
+@import "./base/variables";
 @import "./base/layout";
 @import "./base/maps";
 @import "./components/header";
@@ -20,7 +21,7 @@
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: $principal;
     font-size: 80px;
     margin: 0px 0px 0px 0px;
     padding: 0px;
@@ -81,11 +82,11 @@ h1 {
         background-color: map-get($estilos, colorFondo);
         display: flex;
         flex-flow: column wrap;
-        transition: 1s;
+        transition: 0.5s;
 
         &:hover {
             background-color: map-get($estilos, colorHover);
-            transition: 1s;
+            transition: 0.5s;
         }
 
         h2 {
@@ -127,11 +128,11 @@ h1 {
         height: auto;
         @include sizeMargin(0px, 20px, 0px, 20px);
         padding: 40px 20px 40px 20px;
-        transition: 1s;
+        transition: 0.5s;
 
         &:hover {
             background-color: map-get($estilos, colorHover);
-            transition: 1s;
+            transition: 0.5s;
         }
 
         img {
@@ -167,7 +168,7 @@ h1 {
 
         &:hover {
             background-color: map-get($estilos, colorHover);
-            transition: 1s;
+            transition: 0.5s;
         }
 
         img {
@@ -256,11 +257,11 @@ h1 {
                     width: 500px;
                     margin: 40px 40px 40px 40px;
                     border: 2px solid #000;
-                    transition: 1s;
+                    transition: 0.5s;
 
                     &:hover {
                         width: 600px;
-                        transition: 1s;
+                        transition: 0.5s;
                     }
                 }
             }
@@ -291,12 +292,12 @@ h1 {
                 flex-flow: column wrap;
                 justify-content: center;
                 align-items: center;
-                transition: 1s;
+                transition: 0.5s;
                 margin: 10px 10px 10px 10px;
 
                 &:hover {
                     background-color: #2721595d;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
 
                 h2 {
@@ -316,13 +317,13 @@ h1 {
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;
-                transition: 1s;
+                transition: 0.5s;
                 margin: 10px 10px 10px 10px;
                 padding: 20px;
 
                 &:hover {
                     background-color: #2721595d;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
             }
         }

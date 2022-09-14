@@ -5,12 +5,12 @@ header {
     .navBarWide {
         width: 100%;
         height: 80px;
-        background-color: #000;
+        background-color: $negro;
         text-align: center;
         vertical-align: top;
         text-transform: uppercase;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 700;
+        font-family: $principal;
+        font-weight: 600;
         font-size: 20px;
         display: flex;
         flex-direction: row;
@@ -25,17 +25,17 @@ header {
             align-items: center;
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $blanco;
                 height: 100%;
                 width: 40%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: 1s;
+                transition: 0.5s;
                 &:hover {
-                    color: #27724E;
-                    background-color: rgb(27, 27, 27);
-                    transition: 1s;
+                    color: $claro;
+                    background-color: $gris;
+                    transition: 0.5s;
                 }
             }
         }
@@ -43,10 +43,10 @@ header {
             .logoNav {
                 vertical-align: middle;
                 width: 50px;
-                transition: 1s;
+                transition: 0.5s;
                 &:hover {
                     width: 70px;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
             }
         }
@@ -54,8 +54,9 @@ header {
     .navbar {
         display: none;
         text-transform: uppercase;
-        font-family: 'Courier New', Courier, monospace;
-        background-color: #000;
+        font-family: $principal;
+        font-weight: 600;
+        background-color: $negro;
         text-align: center;
         vertical-align: top;
         --bs-navbar-padding-y: 1rem;
@@ -64,16 +65,16 @@ header {
                 .logoNav {
                     vertical-align: middle;
                     width: 50px;
-                    transition: 1s;
+                    transition: 0.5s;
                     &:hover {
                         width: 70px;
-                        transition: 1s;
+                        transition: 0.5s;
                     }
                 }
                 &:hover {
-                    color: #27724E;
-                    background-color: rgb(27, 27, 27);
-                    transition: 1s;
+                    color: $claro;
+                    background-color: $gris;
+                    transition: 0.5s;
                 }
             }
         }
