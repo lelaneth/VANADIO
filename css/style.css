@@ -239,12 +239,12 @@ h1 {
     margin-bottom: 10px;
     margin-left: 20px;
     padding: 40px 40px 40px 40px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.051);
     display: flex;
     flex-flow: column wrap;
     transition: 0.5s; }
     .bloqueAbout .bloqueIndiv:hover {
-      background-color: #005557;
+      background-color: rgba(112, 169, 161, 0.85);
       transition: 0.5s; }
     .bloqueAbout .bloqueIndiv h2 {
       font-size: 30px;
@@ -285,7 +285,7 @@ h1 {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.051);
     width: 600px;
     height: auto;
     margin-top: 0px;
@@ -295,7 +295,7 @@ h1 {
     padding: 40px 20px 40px 20px;
     transition: 0.5s; }
     .principal .fundador:hover, .secundario .fundador:hover, .secundario .colaborador:hover {
-      background-color: #005557;
+      background-color: rgba(112, 169, 161, 0.85);
       transition: 0.5s; }
     .principal .fundador img, .secundario .fundador img, .secundario .colaborador img {
       width: 400px;
@@ -329,7 +329,7 @@ h1 {
     margin-bottom: 10px;
     margin-left: 40px; }
     .secundario .colaborador:hover {
-      background-color: #005557;
+      background-color: rgba(112, 169, 161, 0.85);
       transition: 0.5s; }
     .secundario .colaborador img {
       width: 350px;
@@ -417,7 +417,7 @@ h1 {
   .gridContainerGeneral main .bloqueContacto .bloqueInfo {
     width: 700px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.051);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -425,17 +425,19 @@ h1 {
     transition: 0.5s;
     margin: 10px 10px 10px 10px; }
     .gridContainerGeneral main .bloqueContacto .bloqueInfo:hover {
-      background-color: #2721595d;
+      background-color: rgba(112, 169, 161, 0.85);
       transition: 0.5s; }
     .gridContainerGeneral main .bloqueContacto .bloqueInfo h2 {
       text-transform: uppercase;
       font-size: 30px;
+      font-family: "Noto Sans", sans-serif;
       font-weight: 800;
       text-align: center; }
   .gridContainerGeneral main .bloqueContacto .bloqueForm {
     width: 700px;
     height: 700px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.051);
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -445,8 +447,11 @@ h1 {
     margin: 10px 10px 10px 10px;
     padding: 20px; }
     .gridContainerGeneral main .bloqueContacto .bloqueForm:hover {
-      background-color: #2721595d;
+      background-color: rgba(112, 169, 161, 0.85);
       transition: 0.5s; }
+    .gridContainerGeneral main .bloqueContacto .bloqueForm form button {
+      background-color: #005557;
+      border-color: #005557; }
 
 /* --------------/CONTACTO---------------- */
 /* --------------------------------------- */

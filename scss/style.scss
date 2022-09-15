@@ -294,7 +294,7 @@ h1 {
             .bloqueInfo {
                 width: 700px;
                 height: 500px;
-                background-color: rgba(255, 255, 255, 0.05);
+                background-color: $grisAlpha;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
@@ -303,13 +303,14 @@ h1 {
                 margin: 10px 10px 10px 10px;
 
                 &:hover {
-                    background-color: #2721595d;
+                    background-color: $claroAlpha;
                     transition: 0.5s;
                 }
 
                 h2 {
                     text-transform: uppercase;
                     font-size: 30px;
+                    font-family: $principal;
                     font-weight: 800;
                     text-align: center;
                 }
@@ -318,7 +319,8 @@ h1 {
             .bloqueForm {
                 width: 700px;
                 height: 700px;
-                background-color: rgba(255, 255, 255, 0.05);
+                background-color: $grisAlpha;
+                font-family: $secundaria;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
@@ -329,8 +331,14 @@ h1 {
                 padding: 20px;
 
                 &:hover {
-                    background-color: #2721595d;
+                    background-color: $claroAlpha;
                     transition: 0.5s;
+                }
+                form {
+                    button {
+                        background-color: $oscuro;
+                        border-color: $oscuro;
+                    }
                 }
             }
         }
