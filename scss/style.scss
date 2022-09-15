@@ -94,10 +94,12 @@ h1 {
             font-weight: 600;
             text-transform: uppercase;
             @include sizeMargin(10px, 0px, 30px, 0px);
+            font-family: $principal;
         }
 
         p {
             margin-right: 7px;
+            font-family: $secundaria;
         }
     }
 }
@@ -106,6 +108,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
+    font-family: $principal;
     font-weight: 700;
     @include sizeMargin(5px, 0px, 5px, 0px);
 }
@@ -146,6 +149,7 @@ h1 {
             font-weight: 600;
             @include sizeMargin(20px, 0px, 20px, 0px);
             text-align: center;
+            font-family: $principal;
         }
 
         p {
@@ -153,6 +157,7 @@ h1 {
             padding: 0px;
             margin: 0px;
             text-align: center;
+            font-family: $secundaria;
         }
     }
 }
@@ -182,6 +187,7 @@ h1 {
             font-weight: 600;
             @include sizeMargin(20px, 0px, 20px, 0px);
             text-align: center;
+            font-family: $principal;
         }
 
         p {
@@ -189,6 +195,7 @@ h1 {
             padding: 0px;
             margin: 0px;
             text-align: center;
+            font-family: $secundaria;
         }
     }
 }
